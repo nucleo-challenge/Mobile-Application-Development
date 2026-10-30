@@ -7,11 +7,11 @@ população a entender a energia nuclear de forma leve, didática e sem medo.
 
 ## Integrantes da equipe
 
-- Cassio Alexandre Ribeiro de Moraes - RM 567295
-- Davi Isac Colin pereira - RM 567265
-- Hugo Souza de Jesus - RM 568542
-- Matheus Peres Moraes de Jesus - RM 567300
-- Pedro Gonçalves Rodrigues - RM 567651
+- Cassio Alexandre Ribeiro de Moraes — RM 567295
+- Davi Isac Colin Pereira — RM 567265
+- Hugo Souza de Jesus — RM 568542
+- Matheus Peres Moraes de Jesus — RM 567300
+- Pedro Gonçalves Rodrigues — RM 567651
 
 ## Empresa / parceiro
 
@@ -59,6 +59,62 @@ Paleta com a regra 60/30/10:
 | 60% — fundos e superfícies | Creme | `#FFF5F5` |
 | 30% — ações e destaques    | Azul  | `#1971C2` |
 | 10% — contraste e texto    | Navy  | `#0B1F3A` |
+
+## Como executar
+
+**Pré-requisitos:** [Flutter](https://docs.flutter.dev/get-started/install) instalado
+(`flutter doctor` sem erros), Git e, para Android, o Android Studio com um emulador criado
+(ou um celular com depuração USB ativada).
+
+```bash
+# 1. Clonar o repositório
+git clone https://github.com/nucleo-challenge/Mobile-Application-Development.git
+cd Mobile-Application-Development
+
+# 2. Baixar as dependências
+flutter pub get
+
+# 3. Ver os dispositivos disponíveis (emulador, celular, Chrome)
+flutter devices
+
+# 4. Executar
+flutter run                # usa o dispositivo disponível
+flutter run -d chrome      # versão Web
+flutter run -d <id>        # dispositivo específico (id mostrado no passo 3)
+```
+
+Se as pastas `android/`, `ios/` e `web/` ainda não existirem no projeto, gere-as uma única vez:
+
+```bash
+flutter create . --project-name nucleo_app --platforms=android,ios,web
+```
+
+Testes automatizados:
+
+```bash
+flutter test
+```
+
+## Como usar o aplicativo
+
+1. **Home:** leia a apresentação do projeto e toque em **Começar jornada** ou escolha um
+   desafio. Seu nível, o progresso nos jogos e o ranking da semana aparecem aqui.
+2. **Mito ou Verdade:** leia a afirmação do cartão e **arraste para a direita (Verdade)** ou
+   **para a esquerda (Mito)**. Também é possível usar os botões na parte de baixo. Depois de
+   cada resposta, uma explicação aparece na tela. Cada acerto vale 100 XP.
+3. **Equilíbrio da Cidade:** use **+** e **−** para montar a matriz energética (até 8 fontes
+   no total, no máximo 3 de cada). Acompanhe as barras de **carbono**, **custo** e
+   **estabilidade** e toque em **Avaliar minha cidade**. A cidade só fica equilibrada com
+   energia nuclear como base estável.
+4. **Login:** toque no avatar no canto superior direito. Informe um e-mail válido e uma senha
+   com pelo menos 6 caracteres, ou toque em **Criar uma conta**. Os dados são fictícios:
+   qualquer e-mail e senha válidos funcionam.
+5. **Perguntas (CRUD):** na barra inferior, abra **Perguntas** para criar uma nova pergunta
+   (**Nova pergunta**), **editar** ou **excluir** as existentes. As mudanças já valem para o
+   jogo Mito ou Verdade.
+6. **Convide amigos:** na Home, toque em **Convide amigos** para ver e copiar seu código.
+
+> Os dados ficam apenas em memória: ao fechar o app, tudo volta ao estado inicial.
 
 ## Estrutura do projeto
 
