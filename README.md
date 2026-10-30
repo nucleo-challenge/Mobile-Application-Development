@@ -7,11 +7,11 @@ população a entender a energia nuclear de forma leve, didática e sem medo.
 
 ## Integrantes da equipe
 
-- Cassio Alexandre Ribeiro de Moraes  - RM 567295
-- Davi Isac Colin pereira             - RM 567265
-- Hugo Souza de Jesus                 - RM 568542
-- Matheus Peres Moraes de Jesus       - RM 567300
-- Pedro Gonçalves Rodrigues           - RM 567651
+- Cassio Alexandre Ribeiro de Moraes - RM 567295
+- Davi Isac Colin pereira - RM 567265
+- Hugo Souza de Jesus - RM 568542
+- Matheus Peres Moraes de Jesus - RM 567300
+- Pedro Gonçalves Rodrigues - RM 567651
 
 ## Empresa / parceiro
 
@@ -21,15 +21,15 @@ os públicos e o medo que isso gera na população.
 ## Descrição da solução
 
 O Núcleo transforma o tema "energia nuclear" em jogos curtos, com ranking e convites entre
-usuários (com bonificações, como *skins*, em evolução futura).
+usuários (com bonificações, como _skins_, em evolução futura).
 
-| Tela | Rota | O que faz |
-| --- | --- | --- |
-| Home | `/` | Explica o projeto, mostra os benefícios da tecnologia nuclear, os desafios, o nível e o ranking da semana |
-| Mito ou Verdade | `/mito` | Cartões de arrastar (direita = verdade, esquerda = mito) com explicação imediata após cada resposta |
-| Equilíbrio da Cidade | `/cidade` | O jogador monta a matriz energética e equilibra carbono, custo e estabilidade. Só vence com a energia nuclear como base estável |
-| Login / Cadastro | `/login` | Formulário com validação (e-mail, senha, nome e aceite de termos) |
-| CRUD de perguntas | `/perguntas` | Cria, edita e exclui as afirmações usadas no jogo Mito ou Verdade |
+| Tela                 | Rota         | O que faz                                                                                                                       |
+| -------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| Home                 | `/`          | Explica o projeto, mostra os benefícios da tecnologia nuclear, os desafios, o nível e o ranking da semana                       |
+| Mito ou Verdade      | `/mito`      | Cartões de arrastar (direita = verdade, esquerda = mito) com explicação imediata após cada resposta                             |
+| Equilíbrio da Cidade | `/cidade`    | O jogador monta a matriz energética e equilibra carbono, custo e estabilidade. Só vence com a energia nuclear como base estável |
+| Login / Cadastro     | `/login`     | Formulário com validação (e-mail, senha, nome e aceite de termos)                                                               |
+| CRUD de perguntas    | `/perguntas` | Cria, edita e exclui as afirmações usadas no jogo Mito ou Verdade                                                               |
 
 > Nesta Sprint os dados são **mockados** (ficam apenas em memória). Não há banco de dados
 > nem serviços externos.
@@ -54,11 +54,11 @@ usuários (com bonificações, como *skins*, em evolução futura).
 
 Paleta com a regra 60/30/10:
 
-| Uso | Cor | Hex |
-| --- | --- | --- |
+| Uso                        | Cor   | Hex       |
+| -------------------------- | ----- | --------- |
 | 60% — fundos e superfícies | Creme | `#FFF5F5` |
-| 30% — ações e destaques | Azul | `#1971C2` |
-| 10% — contraste e texto | Navy | `#0B1F3A` |
+| 30% — ações e destaques    | Azul  | `#1971C2` |
+| 10% — contraste e texto    | Navy  | `#0B1F3A` |
 
 ## Estrutura do projeto
 
@@ -79,9 +79,9 @@ assets/images/logo.png     # Logo do Núcleo
 
 - Flutter e Dart
 - Material Design 3
-- Git e GitHub 
+- Git e GitHub
 - Figma (protótipo de interface)
 
 ## Vídeo de demonstração
 
-[Assistir ao vídeo](https://www.youtube.com/)
+[Assistir ao vídeo](https://youtu.be/UMFL_F24nl4)
